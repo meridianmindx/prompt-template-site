@@ -7,15 +7,16 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
-        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
-        header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 60px 0; text-align: center; }
-        header h1 { font-size: 2.5rem; color: #00d4ff; margin-bottom: 10px; }
-        header p { font-size: 1.2rem; color: #aaa; max-width: 600px; margin: 0 auto; }
-        .badge-row { display: flex; gap: 10px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 70px 0 50px; text-align: center; }
+        header h1 { font-size: 2.8rem; color: #00d4ff; margin-bottom: 10px; }
+        header p { font-size: 1.15rem; color: #aaa; max-width: 640px; margin: 0 auto; }
+        .badge-row { display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap; }
         .badge { display: inline-block; padding: 6px 14px; background: #1a1a2e; border: 1px solid #00d4ff44; border-radius: 20px; font-size: 0.85rem; color: #00d4ff; text-decoration: none; }
         .badge:hover { background: #00d4ff22; }
+        .badges img { height: 22px; margin: 0 4px; }
         section { padding: 50px 0; border-bottom: 1px solid #1a1a2e; }
-        section h2 { font-size: 1.8rem; color: #00d4ff; margin-bottom: 20px; }
+        section h2 { font-size: 1.9rem; color: #00d4ff; margin-bottom: 20px; }
         section h3 { color: #4a9eff; margin: 20px 0 10px; }
         p { margin: 10px 0; }
         code { background: #1a1a2e; padding: 2px 6px; border-radius: 4px; font-size: 0.95rem; }
@@ -23,8 +24,8 @@
         pre code { background: none; padding: 0; }
         a { color: #00d4ff; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
-        .feature-card { background: #1a1a2e; padding: 20px; border-radius: 8px; border: 1px solid #1a1a2e; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 20px; }
+        .feature-card { background: #1a1a2e; padding: 22px; border-radius: 8px; border: 1px solid #1a1a2e; }
         .feature-card h3 { margin-top: 0; color: #4a9eff; }
         .cta { text-align: center; padding: 60px 0; }
         .cta h2 { color: #00d4ff; }
@@ -40,11 +41,15 @@
         <div class="container">
             <h1>Prompt Template Engine</h1>
             <p>A modern Python library for templating LLM prompts with built-in guards, validation, and error handling.</p>
-            <div class="badge-row">
-                <span class="badge">🐍 Python 3.9+</span>
-                <span class="badge">📦 MIT License</span>
-                <span class="badge">🔒 Input validation</span>
-                <span class="badge">🔒 Guardrails enabled</span>
+            <div class="badges">
+                <a href="https://pypi.org/project/prompt-templates/">
+                    <img src="https://img.shields.io/pypi/v/prompt-templates?label=pypi" alt="PyPI version">
+                </a>
+                <a href="https://github.com/meridianmindx/prompt-template-engine">
+                    <img src="https://img.shields.io/github/v/tag/meridianmindx/prompt-template-engine?label=github" alt="GitHub tag">
+                </a>
+                <img src="https://img.shields.io/pypi/dm/prompt-templates?label=downloads" alt="PyPI downloads">
+                <img src="https://img.shields.io/pypi/l/prompt-templates?label=license" alt="License">
             </div>
         </div>
     </header>
